@@ -1,0 +1,13 @@
+
+
+1 - FLASH write fails after playing sound:
+ because cannot erase first 
+ because FLASH_WaitForLastOperation fails
+ because  FLASH->SR = 0xE0 (PGSERR SIZERR PGAERR) should be 0
+ because DMA transfer from flash to DAC causes errors on SR register even if sound is OK
+
+ Temporary solution: clear Flash errors flags afer playing sound
+     __HAL_FLASH_CLEAR_FLAG(FLASH_FLAG_SR_ERRORS);
+
+
+
