@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>LYNKX_firmware</name>
+	<name>LYNKX_test_firmware</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -440,7 +440,7 @@
 		<link>
 			<name>Application/User/Core/remote_command.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/LYNKX_firmware/Core/Src/remote_command.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/LYNKX_test_firmware/Core/Src/remote_command.c</locationURI>
 		</link>
 		<link>
 			<name>Application/User/Core/stm32_lpm_if.c</name>
